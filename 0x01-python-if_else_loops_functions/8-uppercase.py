@@ -4,5 +4,5 @@ def uppercase(str):
         j = ord(char)
         if j in range(97, 123):
             j -= 32
-        print(f"{j:c}", end="")
+        print("{:c}".format(j), end="")
     print()
