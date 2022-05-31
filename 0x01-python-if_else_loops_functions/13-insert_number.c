@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include "lists.h"
 
-/**
+ /**
  * insert_node - inserts a number into a sorted linked list
  * @head: the first node in the linked list
  * @number: the number to be inserted
