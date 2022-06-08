@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    new = my_string.replace('c', '')
-    newnew = new.replace('C', '')
-    return (newnew)
+    new = []
+    for c in my_string:
+        if c not in ('c', 'C'):
+            new.append(c)
+    return (''.join(new))
