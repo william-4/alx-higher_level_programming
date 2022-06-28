@@ -1,0 +1,53 @@
+Test for ``0-add_integer`` module
+=================================
+
+Import function from the module:
+       >>> add_integer = __import__("0-add_integer").add_integer
+
+Test for regular addition:
+     >>> add_integer(2, 8)
+     10
+
+Test for positive and negative integer:
+     >>> add_integer(2, -8)
+     -6
+
+Test for negative and positive integer:
+     >>> add_integer(-2, 8)
+     6
+
+Test for float addition:
+     >>> add_integer(2.1, 7.9)
+     9
+
+Test for float and int:
+     >>> add_integer(2.1, 7)
+     9
+
+Test for int and float:
+     >>> add_integer(7, 2.1)
+     9
+
+Checking non-number with number:
+	 >>> add_integer([1], 2)
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: a must be an integer
+
+Checking number with non-number:
+	 >>> add_integer(3, "2")
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: b must be an integer
+
+Checking bool with number:
+	 >>> add_integer(True, 1)
+	 Traceback (most recent call last):
+         ...
+         TypeError: a must be an integer
+
+Checking number with bool:
+	 >>> add_integer(0, False)
+         Traceback (most recent call last):
+         ...
+         TypeError: b must be an integer
