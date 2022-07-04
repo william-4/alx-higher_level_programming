@@ -6,7 +6,7 @@ Defines MyList class that inherits from the list class
 
 class MyList(list):
     """a subclass that inherits from the list class"""
-    def print_sorted(self):
+    def __init__(self):
         """initialization of an instance"""
         super().__init__()
 
