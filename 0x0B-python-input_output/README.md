@@ -1,5 +1,7 @@
 # Python Input/Output
 
+##### Revisit task 8..
+
 ### Objectives
 
 > Why Python programming is awesome
