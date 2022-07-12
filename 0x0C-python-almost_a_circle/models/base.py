@@ -11,6 +11,7 @@ class Base:
 
     ''' private class attribute for number of objects'''
     __nb_objects = 0
+
     def __init__(self, id=None):
         """
         Initialize a Base instance
