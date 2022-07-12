@@ -22,7 +22,6 @@ class Rectangle(Base):
         if height <= 0:
             raise ValueError("height must be > 0")
 
-
         if type(x) != int:
             raise TypeError("x must be an integer")
         if x < 0:
@@ -44,6 +43,7 @@ class Rectangle(Base):
         Returns the width of the rectangle
         """
         return self.__width
+
     @width.setter
     def width(self, w):
         """
@@ -61,6 +61,7 @@ class Rectangle(Base):
         Returns the height of the rectangle
         """
         return self.__height
+
     @height.setter
     def height(self, h):
         """
@@ -72,13 +73,13 @@ class Rectangle(Base):
             raise ValueError("height must be > 0")
         self.__height = h
 
-
     @property
     def x(self):
         """
         Returns the x-coordinate of the rectangle
         """
         return self.__x
+
     @x.setter
     def x(self, value):
         """
@@ -96,6 +97,7 @@ class Rectangle(Base):
         Returns the y-coordinate of the rectangle
         """
         return self.__y
+
     @y.setter
     def y(self, value):
         """
@@ -106,7 +108,6 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
-
 
     def area(self):
         """
@@ -128,12 +129,11 @@ class Rectangle(Base):
         """
         Updates the attributes
         """
-        
 
     def __str__(self):
         """
         Overrides the __str__method so that it returns a custom string
         """
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x,
-                                                    self.__y, self.__width,
-                                                    self.__height)
+                                                       self.__y, self.__width,
+                                                       self.__height)
