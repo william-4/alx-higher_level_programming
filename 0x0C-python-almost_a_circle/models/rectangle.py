@@ -3,6 +3,7 @@
 A module that defines the Rectangle class
 """
 from models.base import Base
+import json
 
 
 class Rectangle(Base):
@@ -153,7 +154,7 @@ class Rectangle(Base):
                 elif i == 3:
                     self.__x = arg
                 elif i == 4:
-                    self.__y = arg
+                     self.__y = arg
                 i += 1
 
         elif kwargs and len(kwargs) != 0:
