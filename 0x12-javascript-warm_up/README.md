@@ -1,5 +1,7 @@
 # Javascript Warm Up
 
+### General
+
 > Why JavaScript programming is amazing
 
 > How to run a JavaScript script
