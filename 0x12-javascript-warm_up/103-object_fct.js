@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-let obj = {
+const obj = {
   type: 'object',
   value: 12
 };
