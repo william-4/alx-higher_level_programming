@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 A script that prints all City objects our db
 """
 
