@@ -8,7 +8,7 @@ if __name__ == "__main__":
     from model_state import Base, State
 
     from sqlalchemy import (create_engine)
-    from sqlalchemy.orm import Session
+    from sqlalchemy.orm import sessionmaker
 
     if __name__ == "__main__":
         engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'
@@ -16,9 +16,11 @@ if __name__ == "__main__":
                                poop_pre_ping=True)
         Base.metadata.create_all(engine)
 
-        session = Session(engine)
-        session.add(State(name="Louisiana"))
-        new = session.query(State).filter(State.name == "Louisiana").first()
+        Session = sessionmaker(bind=engine)
+        session = Session()
+
+        louisiana = State(name="Louisiana")
+        session.add(louisiana)
         session.commit()
-        print("{}".format(new.id))
+        print(louisiana.id))
         session.close()
