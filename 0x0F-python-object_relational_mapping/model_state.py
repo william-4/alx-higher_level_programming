@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A python script that contains a class definition of State and an 
+A python script that contains a class definition of State and an
 instance Base = declarative_base():
 """
 
@@ -8,6 +8,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
 
 Base = declarative_base()
+
 
 class State(Base):
     """Class State to represent our states"""

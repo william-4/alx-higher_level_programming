@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 This module defines the class City that inherits from Base
 """
 
