@@ -1,6 +1,6 @@
 # Python - Network #0
 
-### General
+### General Objectives
 
 > What a URL is
 
